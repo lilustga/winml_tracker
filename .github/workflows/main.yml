@@ -21,9 +21,9 @@ jobs:
     - name: Cleanup windows environment
       shell: cmd
       run: |
-        rd /s /q /c/hostedtoolcache/windows/Boost/1.72.0/lib/cmake/Boost-1.72.0
-        mkdir -p /c/ci
-        copy $GITHUB_WORKSPACE/ci/toolchain.cmake /c/ci
+        rd /s /q \c\hostedtoolcache\windows\Boost\1.72.0\lib\cmake\Boost-1.72.0
+        mkdir -p \c\ci
+        copy $GITHUB_WORKSPACE\ci\toolchain.cmake \c\ci
     - uses: goanpeca/setup-miniconda@v1
       with:
         activate-environment: myenv
