@@ -22,7 +22,7 @@ jobs:
       shell: cmd
       run: |
         mkdir /c/ci
-        copy $GITHUB_WORKSPACE/ci/toolchain.cmake /c/ci
+        copy C:\actions-runner\_work\winml_tracker\winml_tracker/ci/toolchain.cmake /c/ci
     - uses: goanpeca/setup-miniconda@v1
       with:
         activate-environment: myenv
